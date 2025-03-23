@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex; /* Use flexbox for layout */
+  align-content: center;
+  padding-left: 10%;
+}
+
+#movie-list {
+  width: 18%; /* Set width for movie list */
+  padding-right: 20px; /* Space between list and details */
+}
+
+#movie-details {
+  width: 50%; /* Set width for movie details */
+  height: 550px; /* Reduced fixed height for movie details */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 2px; /* Reduced inner padding */
+  background: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children to the top */
+}
+
+.image-container {
+  width: 300px; /* Fixed width for the image container */
+  height: 450px; /* Fixed height for the image container */
+  overflow: hidden; /* Hide overflow if image is larger */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+.image-container img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: 100%; /* Make the image take the full height of the container */
+  object-fit: cover; /* Cover will fill the container while maintaining aspect ratio */
+  align-items: center;
+}
+
+#movie-details h2 {
+  font-size: 1.8em;
+  color: #007bff;
+  margin: 10px 0; /* Reduced margin above and below the title */
+}
+#container h2 {
+  color: #007bff;
+}
+
+#movie-details p {
+  font-size: 1.2em;
+  color: #555;
+  margin: 5px 0; /* Reduced margin above and below paragraphs */
+}
+
+/* Button styling with reduced width */
+#buy-ticket {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#buy-ticket:hover {
+  background-color: #0056b3;
+}
+
+#films {
+  list-style-type: none;
+  padding: 0;
+}
+
+.film.item {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.film.item:hover {
+  background-color: #eaeaea;
+}
+
+.sold-out {
+  color: red;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ccc;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #555;
+  align-content: center;
+}

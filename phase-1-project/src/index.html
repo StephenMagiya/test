@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatdango - Movie Ticket Purchase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>-Movie Ticket Purchase Application</h1>
+    
+    <div class="container"> <!-- Parent container for flex layout -->
+        <div id="movie-list"> <!-- Wrapper for movie list -->
+            <h2>Available Movies</h2>
+            <ul id="films"></ul> <!-- Movie list will be populated here -->
+        </div>
+
+        <div id="movie-details"> <!-- Wrapper for movie details -->
+            <div class="image-container">
+                <img id="poster" src="" alt="Movie Poster">
+            </div>
+            <h2 id="title"></h2>
+            <p id="runtime"></p>
+            <p id="showtime"></p>
+            <button id="buy-ticket">Buy Ticket</button>
+            <p id="available-tickets"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
